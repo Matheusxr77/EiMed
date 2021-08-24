@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**boot**/
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(31, 219, 150);
+}
+
+.clear{
+    clear: both;
+}
+/**styles**/
+
+.descricao{
+    box-shadow: 2px 2px 2px 2px darkgray;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 2%;
+    max-width: 500px;
+    width: 95%;
+}
+
+.descricao h1{
+    text-align: center;
+}
+
+.descricao input[type="submit"]{
+	width: 90px;
+	height: 30px;
+    cursor: pointer;
+	padding-left: 8px;
+	margin-top: 8px;
+	background: #1fdb96;
+	color: #ffffff;
+	border: 0;
+	font-family: Monaco, monospace;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.descricao .btn-voltar{
+	width: 90px;
+	height: 30px;
+    cursor: pointer;
+	padding-left: 8px;
+	margin-top: 8px;
+	background: #1fdb96;
+	color: #ffffff;
+	border: 0;
+	font-family: Monaco, monospace;
+	font-weight: bold;
+    font-size: 16px;
+    right: 0;
+    
+}

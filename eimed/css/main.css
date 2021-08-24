@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/**boot**/
+html, body{
+	height: 100%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.verde{
+	color: rgb(52, 158, 155);
+}
+
+.clear{
+	clear: both;
+}
+/**styles**/
+
+header{
+	min-height: 40px;
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: rgb(31, 219, 150);
+	z-index: 2;
+}
+
+a:link{
+	color: #0eaf12;
+	text-decoration: none;
+	font-family: Georgia, serif;
+	font-size: 16px;
+}
+
+a:hover{
+	color: #c6f100;
+}
+
+a:visited{
+	color: #0eaf12;
+}
+
+.logotipo{
+	margin: 0;
+	padding: 0;
+	position: fixed;
+}
+
+.logout{
+	width: 90px;
+	height: 40px;
+	display: none;
+	position: relative;
+	cursor: pointer;
+	padding-left: 8px;
+	background: rgb(52, 158, 155);
+	color: rgb(16, 48, 48);
+	border: 0;
+	text-align: center;
+	z-index: 99;
+}
+
+.login{
+	width: 90px;
+	height: 40px;
+	position: relative;
+	cursor: pointer;
+	padding-left: 8px;
+	background: #1fdb96;
+	color: #ffffff;
+	border: 0;
+	text-align: center;
+	z-index: 99;
+	border-left-style: solid;
+	border-color: #ffffff;
+	border-width: 2px;
+	font-family: Monaco, monospace;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+.descricao{
+	margin: 10px 40px 10px 40px;
+}
+
+.descricao h1{
+	color: #1fdb96;
+	font-family: Georgia, serif;
+}
+
+.descricao p{
+	/**3e3f41**/
+	color: #4f5051;
+	font-family: Georgia, serif;
+	font-size: 20px;
+}
+
+.descricao hr{
+	margin-right: 550px;
+	background-image: linear-gradient(to right,transparent,#1fdb96,transparent);
+	border: 0;
+	height: 2px;
+}
+
+.imagem-logo{
+	max-height: 350px;
+	max-width: 350px;
+	border-radius: 50%;
+}
+.imagem-baixo{
+	max-width: 120px;
+	max-height: 120px;
+	border-radius: 50%;
+}
+
+.parte-baixo{
+	margin: 10px 40px 10px 40px;
+	justify-content: center;
+	max-height: 90%;
+}
+
+.desisto{
+	margin-bottom: 5px;
+}
+
+.desisto hr{
+	margin-right: 850px;
+	margin-bottom: 10px;
+	background-image: linear-gradient(to right,transparent,#0eaf12,transparent);
+	border: 0;
+	height: 2px;
+}
+
+/**Perfil**/
+.perfil-box{
+	display: none;
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(0, 28, 22);
+	border-radius: 10px;
+	z-index: 999;
+	text-align: center;
+	font-size: 50px;
+}
+
+.perfil-imagem{
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+

@@ -1,0 +1,238 @@
+html,
+body {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+  background-color: #3890c7;
+}
+section {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 20px 0;
+}
+section hr {
+  width: 30px;
+}
+.cor_fundo {
+  background: #0F6CA6;
+}
+/* --------  Header  -------- */
+header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background: #012840;
+}
+header #logo {
+  position: absolute;
+  top: 0px;
+  float: left;
+  height: 60px;
+  width: 170px;
+  margin-left: 5%;
+}
+header #logo img{
+  max-height: 100%;
+}
+header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 0px;
+  margin-right: 5%;
+}
+header .menu li {
+  float: left;
+  font-size: 18px;
+  padding: 20px 10px 20px 10px;
+}
+header .menu li a {
+  color: initial;
+  text-decoration: initial;
+  color: white;
+}
+header .menu li:hover {
+  display: inline-block;
+  background-color: #0F6CA6;
+  padding: 10px;
+  margin: 2px;
+  transition: background-color 1s;
+}
+/* --------  Capa  -------- */
+figure {
+  margin: 0 auto;
+}
+figure .imagem_fundo {
+  background: url(../Imagens/pagina_principal.jpg); /* https://www.pexels.com/photo/person-writing-on-notebook-4145190/ */
+  background-size: cover;
+  height: 100%;
+  padding: 10px;
+}
+figure .titulo {
+  color: rgb(0, 0, 0);
+  line-height: 0.9;
+  text-shadow: 1px 1px #0F6CA6;
+}
+figure h1.titulo {
+  font-size: 70px;
+  letter-spacing: -5px;
+  margin: 20% 20% 0 20%;
+  padding-bottom: 20px;
+}
+figure h2.titulo {
+  padding-top: 20px;
+  font-size: 30px;
+  margin: 0 30% 0 30%;
+  border-top: 3px solid  #0F6CA6;
+  padding-bottom: 30px;
+}
+.cta {
+  border: 1px solid  #0F6CA6;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px  #0F6CA6;
+  padding: 10 20 10 20;
+  text-decoration: initial;
+  font-size: 20px;
+}
+.cta:hover {
+  background-color: #0F6CA6;
+  border: 0px;
+}
+/* --------  Colunas  -------- */
+.coluna {
+  float: left;
+  padding: 0 5%;
+  position: relative;
+}
+.coluna.quatro {
+  width: 15%;
+  padding: 0 5% 0 5%;
+}
+.coluna.tres {
+  width: 29%;
+  padding: 0 2%;
+}
+.coluna.dois {
+  width: 40%;
+}
+.coluna .icone {
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  text-align: center;
+  margin: 0 auto;
+}
+.coluna .icone img{
+  max-width: 60%;
+  max-height: 60%;
+  margin: 15px;
+}
+.coluna:hover > .icone {
+  background: lightblue;
+}
+.coluna img {
+  height: 300px;
+  width: 100%;
+}
+.coluna iframe { 
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* --------  Textos  -------- */
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+h2 {
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+.esquerda {
+  text-align: left;
+}
+.direita {
+  text-align: right;
+}
+.centro {
+  text-align: center;
+}
+.justificado {
+  text-align: justify;
+}
+/* ----- Imagens ----- */
+.small_img{
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+.small_img:hover{
+  filter: scale(100%);
+  transform: scale(1.1);
+}
+/* --------  Footer  -------- */
+footer {
+  background-color: #012840;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 50px 0;
+  color: #fff;
+}
+footer .container {
+  height: 10px;
+}
+footer .h2{
+  font-family: Roboto'Open Sans', Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: unset;
+  margin-top: 10px;
+  text-align: center;
+}
+footer .p{
+  font-family: Roboto'Open Sans', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  text-transform: unset;
+  margin-top: 10px;
+  text-align: center;
+}
+footer .midias_sociais{
+  padding-left: 55px;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+}
+/* --------  Responsividade  --------*/
+@media all and (max-width: 768px) {
+  .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
+    display: block;
+    width: 80%;
+    padding: 0;
+    margin: 10px auto;
+    float: none;
+  }
+  header #logo {
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  figure h1.titulo {
+    margin-top: 40%;
+  }
+  figure h2.titulo {
+    margin: 0 10% 0 10%;
+  }
+}

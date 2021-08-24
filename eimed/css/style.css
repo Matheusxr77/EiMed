@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/**boot**/
+html, body{
+	height: 100%;
+	background: rgb(31, 219, 150);
+}
+
+.clear{
+	clear: both;
+}
+
+/**styles**/
+.box-login{
+	display: initial;
+	max-width: 600px;
+	width: 95%;
+	padding: 40px 2%;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.box-login input[type="text"],
+input[type="password"]
+{
+	width: 100%;
+	height: 45px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	margin-top: 8px;
+}
+
+.box-login img{
+	width: 500px;
+	height: 250;
+	padding-left: 5px;
+}
+
+.box-login input[type="submit"]{
+	width: 90px;
+	height: 30px;
+	cursor: pointer;
+	padding-left: 8px;
+	margin-top: 8px;
+	background: #1fdb96;
+	color: #ffffff;
+	border: 0;
+	font-family: Monaco, monospace;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.box-login div{
+	text-align: center;
+	padding: 8px;
+	color: rgb(52, 158, 155);
+
+}
+
+.cadastro-btn-text{
+	cursor: pointer;
+	color: rgb(48, 158, 155);
+	border: 0;
+	margin-top: 8px;
+}
+
+/**box-cadastro**/
+
+.box-cadastro{
+	display:none;
+	max-width: 600px;
+	width: 95%;
+	padding: 40px 2%;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.box-cadastro input[type="text"],
+.box-cadastro input[type="email"],
+input[type="password"]
+{
+	width: 100%;
+	height: 45px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	margin-top: 8px;
+}
+
+.box-cadastro input[type="submit"]{
+	width: 90px;
+	height: 30px;
+	cursor: pointer;
+	padding-left: 8px;
+	margin-top: 8px;
+	background: rgb(52, 158, 155);
+	color: white;
+	border: 0;
+}
+
+.box-cadastro div{
+	text-align: center;
+	padding: 8px;
+	color: rgb(52, 158, 155);
+
+}
+

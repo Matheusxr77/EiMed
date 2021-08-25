@@ -5,32 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Disque Doação </title>
-    <link rel="stylesheet" href="..\css\doacoes.css">
-    <link rel="sortcut icon" href="..\imagens\temas_social.png" type="image/png"/>
+    <link rel="stylesheet" href=".\css\doacoes.css">
+    <link rel="sortcut icon" href=".\imagens\temas_social.png" type="image/png"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
 <body>
-    <!--MENU-->
-    <header>
-    <!--LOGO DA EQUIPE-->
-    <div id="logo">
-      <img src="..\imagens\logo.jpeg" alt="Logo - Monstros S.A."/>
-    <!--MENU QUE INTERLIGA AS PÁGINAS-->
-    </div> <!--https://logomakr.com/-->
-        <nav type="disc">
-            <ul class="menu">
-                <li><a href="..\pages\home.php"> Home </a></li>
-                <li><a href="..\pages\especialidades.php"> Especialidades </a></li>
-                <li><a href="..\pages\emergencias.php"> Emergências </a></li>
-                <li><a href="..\pages\doacoes.php"> Disque Doação </a></li>
-                <li><a href="..\pages\noticias.php"> Notícias </a></li>
-                <li><a href="..\pages\informacoes.php"> Informações </a></li>
-                <li><a href="..\pages\login.php"> Login </a></li>
-            </ul>
-        </nav>
-    </header>
+    
     <!--RODAPÉ-->
     <footer>
         <div class="container">

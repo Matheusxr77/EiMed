@@ -140,7 +140,7 @@ figure h2.titulo {
   width: 15%;
   padding: 0 5% 0 5%;
 }
-.coluna.tres {
+.coluna .tres {
   width: 29%;
   padding: 0 2%;
 }
@@ -207,6 +207,7 @@ h2 {
 /* --------  Footer  -------- */
 footer {
   background-color: #012840;
+  bottom: 0;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;

@@ -8,48 +8,6 @@
     box-sizing: border-box;
 }
 
-/* --------  Header  -------- */
-header {
-  height: 60px;
-  width: 100%;
-  position: fixed;
-  z-index: 10;
-  background: #012840;
-}
-header #logo {
-  position: absolute;
-  top: 0px;
-  float: left;
-  height: 60px;
-  width: 170px;
-  margin-left: 5%;
-}
-header #logo img{
-  max-height: 100%;
-}
-header .menu {
-  float: right;
-  list-style: none;
-  margin-top: 0px;
-  margin-right: 5%;
-}
-header .menu li {
-  float: left;
-  font-size: 18px;
-  padding: 20px 10px 20px 10px;
-}
-header .menu li a {
-  color: initial;
-  text-decoration: initial;
-  color: white;
-}
-header .menu li:hover {
-  display: inline-block;
-  background-color: #0F6CA6;
-  padding: 10px;
-  margin: 2px;
-  transition: background-color 1s;
-}
 
 /* ----- Corpo do Texto ----- */
 body {

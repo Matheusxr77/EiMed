@@ -18,48 +18,7 @@ section hr {
 .cor_fundo {
   background: #0F7BA6;
 }
-/* --------  Header  -------- */
-header {
-  height: 60px;
-  width: 100%;
-  position: fixed;
-  z-index: 10;
-  background: #012840;
-}
-header #logo {
-  position: absolute;
-  top: 0px;
-  float: left;
-  height: 60px;
-  width: 170px;
-  margin-left: 5%;
-}
-header #logo img{
-  max-height: 100%;
-}
-header .menu {
-  float: right;
-  list-style: none;
-  margin-top: 0px;
-  margin-right: 5%;
-}
-header .menu li {
-  float: left;
-  font-size: 18px;
-  padding: 20px 10px 20px 10px;
-}
-header .menu li a {
-  color: initial;
-  text-decoration: initial;
-  color: white;
-}
-header .menu li:hover {
-  display: inline-block;
-  background-color: #0F7BA6;
-  padding: 10px;
-  margin: 2px;
-  transition: background-color 1s;
-}
+
 /* --------  Capa  -------- */
 figure {
   margin: 0 auto;
@@ -133,10 +92,7 @@ figure h2.titulo {
 .coluna:hover > .icone {
   background: lightblue;
 }
-.coluna img {
-  height: 300px;
-  width: 100%;
-}
+
 .coluna iframe { 
   top: 0;
   left: 0;
@@ -175,42 +131,7 @@ h2 {
   filter: scale(100%);
   transform: scale(1.1);
 }
-/* --------  Footer  -------- */
-footer {
-  background-color: #012840;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 30px 0 50px 0;
-  color: #fff;
-}
-footer .container {
-  height: 10px;
-}
-footer .h2{
-  font-family: Roboto'Open Sans', Arial, sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  text-transform: unset;
-  margin-top: 10px;
-  text-align: center;
-}
-footer .p{
-  font-family: Roboto'Open Sans', Arial, sans-serif;
-  font-size: 30px;
-  font-weight: lighter;
-  text-transform: unset;
-  margin-top: 10px;
-  text-align: center;
-}
-footer .midias_sociais{
-  padding-left: 55px;
-  margin-top: 10px;
-  width: 50px;
-  height: 50px;
-  align-items: center;
-  text-align: center;
-}
+
 /* --------  Responsividade  --------*/
 @media all and (max-width: 768px) {
   .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {

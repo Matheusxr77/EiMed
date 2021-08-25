@@ -12,45 +12,6 @@
 </head>
 
 <body>
-    <!--MENU-->
-    <header>
-    <!--LOGO DA EQUIPE-->
-    <div id="logo">
-      <img src="..\imagens\logo.jpeg" alt="Logo - Monstros S.A."/>
-    <!--MENU QUE INTERLIGA AS PÁGINAS-->
-    </div> <!--https://logomakr.com/-->
-        <nav type="disc">
-            <ul class="menu">
-                <li><a href="..\pages\home.php"> Home </a></li>
-                <li><a href="..\pages\especialidades.php"> Especialidades </a></li>
-                <li><a href="..\pages\emergencias.php"> Emergências </a></li>
-                <li><a href="..\pages\doacoes.php"> Disque Doação </a></li>
-                <li><a href="..\pages\noticias.php"> Notícias </a></li>
-                <li><a href="..\pages\informacoes.php"> Informações </a></li>
-                <li><a href="..\pages\login.php"> Login </a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--RODAPÉ-->
-    <footer>
-        <div class="container">
-            <ul>
-                <!--APRESENTAÇÃO-->
-                <li class="coluna tres" class="centro"><h2><strong> EiMed </strong></h2>
-                    <p class="centro"> Um site pautado na temática da saúde com sede na instituição de ensino ETE - Ministro Fernando Lyra </p>
-                <!--PARTE DOS CONTATOS-->
-                </li>
-                <li class="coluna tres"><h2><strong> Contato </strong></h2>
-                    <a href="https://www.instagram.com/etecaruaruoficial/" target="_blank"><img src="..\imagens\icon_instagram.png" class="midias_sociais"></a>
-                    <a href="https://www.facebook.com/etecaruaruoficial/" target="_blank"><img src="..\imagens\icon_facebook.png" class="midias_sociais"></a>
-                    <a href="https://wa.me/5581984941102" target="_blank"><img src="..\imagens\icon_whatsapp.png" class="midias_sociais"></a>                <!--LOCALIZAÇÃO DA SEDE-->
-                </li>
-                <li class="coluna tres"><h2><strong> Endereço </strong></h2>
-                    <p class="centro"> Rua Vereador João Avelino Sobrinho </p>
-                    <p class="centro"> Bairro Cidade Alta, Caruaru - PE </p>
-                </li>
-            </ul>  
-        </div>
-    </footer>
+    
 </body>
 </html>

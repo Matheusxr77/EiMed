@@ -49,10 +49,11 @@
     <!--ODS-->
     <section class="cor_fundo">
         <div class="coluna dois">
-            <h1 class="centro"> O que é ODS? </h1>
+            <h1 class="centro"> Sobre o EiMed </h1>
             <hr>
-                <p class="justificado"> Os Objetivos de Desenvolvimento Sustentável (ODS) são uma agenda mundial adotada durante a Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em setembro de 2015 composta por 17 objetivos e 169 metas a serem atingidos até 2030.</p>
-                <p class="justificado"> Nesta agenda estão previstas ações mundiais nas áreas de erradicação da pobreza, segurança alimentar, agricultura, saúde, educação, igualdade de gênero, redução das desigualdades, energia, água e saneamento, padrões sustentáveis de produção e de consumo, mudança do clima, cidades sustentáveis, proteção e uso sustentável dos oceanos e dos ecossistemas terrestres, crescimento econômico inclusivo, infraestrutura, industrialização, entre outros.</p>
+                <p class="justificado"> O EiMed visa a praticidade dada as pessoas que utilizam a internet na busca por redes de saúde privadas e públicas, assim como facilitar a vida delas na obtenção de informação. </p>
+                <p class="justificado"> No site serão encontradas diversas abas contendo notícias, informações de como agir em emergências, doações e, principalmente, especialidades médicas. </p>
+                <p class="justificado"> Desde sempre o EiMed pensa no conforto de seus usuários, portanto, aproveite a plataforma rápida e prática a sua disposição. </p>
             </div>
         <div class="coluna dois">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/LMOynUxsGHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
@@ -60,7 +61,7 @@
     </section>
     <!--TEMAS-->
     <section>
-        <h1> Temas </h1>
+        <h1> Temas Abordados </h1>
         <hr>
         <div class="coluna quatro">
             <div class="icone">

@@ -48,9 +48,10 @@ $btn_vef = isset($_SESSION['login']) ? $_SESSION['login'] : false;
 
 	$url = isset($_GET['url']) ? $_GET['url'] : 'main';
     echo($url);
-	if (($url == 'main') || ($url == 'home'))  {
-		include('pages\home.php');
-	} elseif ($url == 'especialidades') {
+    
+    if (($url == 'main') || ($url == 'home'))  {
+        include('pages\home.php');
+    } elseif ($url == 'especialidades') {
         include('pages\especialidades.php');
     } elseif ($url == 'emergencias') {
         include('pages\emergencias.php');
@@ -65,6 +66,8 @@ $btn_vef = isset($_SESSION['login']) ? $_SESSION['login'] : false;
     } else{
         include('pages\404.php');
     };
+    
+	
 
 
 

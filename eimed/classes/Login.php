@@ -5,7 +5,7 @@
 		}
 
 		public static function logar($user, $password){
-			$sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios` WHERE email = ? AND password = ?");
+			$sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios` WHERE Email = ? AND Senha = ?");
 			$sql->execute(array($user, $password));
 			if($sql->rowCount() == 1){
 				//Logado com sucesso!

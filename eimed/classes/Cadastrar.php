@@ -16,19 +16,19 @@
 				} else if ($password == ' ') {
 					echo ("<div style='width: 100%; z-index: 999; padding: 4px 2%; text-align: center; background: #b50e22; color: white; font-size: 15px;'>Senha não pode ser vazia!</div>");
 				}else{
-					$sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios` WHERE user = ? or email = ? ");
+					$sql = MySql::conectar()->prepare("SELECT * FROM `usuario` WHERE Nome = ? or Email = ? ");
 					$sql->execute(array($user, $email));
 					if($sql->rowCount() > 0){
 						echo ("<div style='width: 100%; z-index: 999; padding: 4px 2%; text-align: center; background: #b50e22; color: white; font-size: 15px;'class='box-erro'>Usuário ou email já registrado!</div>");
 						die(json_encode($array['erro'] = 'false'));
 					}else{
-						$sql = MySql::conectar()->prepare("INSERT INTO `tb_admin.usuarios` VALUES (null, ?, ?, ?) ");
-						$sql->execute(array($user, $email, $password));
-						header("Location: " . INCLUDE_PATH."login");
+						$sql = MySql::conectar()->prepare("INSERT INTO `usuario` VALUES (null, ?, ?, ?, ?) ");
+						$sql->execute(array($user, $email, "0", $password));
+						
 					}
 				}
 			} catch (Exception $e) {
-				echo("<div style='width: 100%; padding: 4px 2%; text-align: center; background: #b50e22; color: white; font-size: 15px;'class='box-erro'>Ocorreu um erro durante o cadastro! Tente novamente mais tarde!</div>");
+				echo("<div style='width: 100%; padding: 4px 2%; text-align: center; background: #b50e22; color: white; font-size: 15px;'class='box-erro'>". $e ."</div>");
 			}
 		}
 	}

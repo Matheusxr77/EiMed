@@ -6,7 +6,7 @@
 
 	spl_autoload_register($autoload);
 
-	define('INCLUDE_PATH', 'http://localhost/EiMed/eimed/main');
+	define('INCLUDE_PATH', 'http://localhost/EiMed/eimed/');
 	define('HOST', 'localhost');
 	define('DATABASE', 'eimed');
 	define('USER', 'root');

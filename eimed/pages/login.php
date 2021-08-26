@@ -116,11 +116,11 @@
                         <input type="password" name="password" placeholder="Senha">
                     </label>
                     <a class="password" href="#"> Esqueceu sua senha? </a>
-                    <input class="btn btn-second" type="button" name="acao" value="Entrar">
+                    <input class="btn btn-second" type="submit" name="acao" value="Entrar">
                 </form>
             </div><!-- second column -->
         </div><!-- second-content -->
     </div>
-    <script src="..\scripts\login.js" type="text/javascript" charset="utf-8"></script>
+    <script src=".\scripts\login.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

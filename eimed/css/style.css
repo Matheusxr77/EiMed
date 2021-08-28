@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-/**boot**/
+/* boot */
 html, body{
 	height: 100%;
 	background: rgb(31, 219, 150);
@@ -14,7 +14,7 @@ html, body{
 	clear: both;
 }
 
-/**styles**/
+/* styles */
 .box-login{
 	display: initial;
 	max-width: 600px;
@@ -61,7 +61,6 @@ input[type="password"]
 	text-align: center;
 	padding: 8px;
 	color: rgb(52, 158, 155);
-
 }
 
 .cadastro-btn-text{
@@ -71,8 +70,7 @@ input[type="password"]
 	margin-top: 8px;
 }
 
-/**box-cadastro**/
-
+/* box-cadastro */
 .box-cadastro{
 	display:none;
 	max-width: 600px;
@@ -111,6 +109,4 @@ input[type="password"]
 	text-align: center;
 	padding: 8px;
 	color: rgb(52, 158, 155);
-
 }
-

@@ -83,7 +83,6 @@
         from {
             transform: scale(0.98)
         }
-
         to {
             transform: scale(1)
         }
@@ -93,23 +92,19 @@
         0% {
             transform: rotate(0deg)
         }
-
         50%,
         60% {
             transform: rotate(-20deg)
         }
-
         100% {
             transform: rotate(0deg)
         }
-
     }
 
     @keyframes olhos {
         0% {
             transform: rotateX(0deg);
         }
-
         100% {
             transform: rotateX(30deg);
         }
@@ -119,11 +114,9 @@
         0% {
             opacity: 0;
         }
-
     }
 
     .main {
-
         min-height: 600px;
         margin: 0px auto;
         width: auto;
@@ -140,19 +133,15 @@
     }
 
     @keyframes dash {
-
         0%,
         30% {
             fill: 4B4B62;
             stroke-dashoffset: 0;
         }
-
         80%,
         100% {
             fill: transparent;
             stroke-dashoffset: -200;
         }
-
-
     }
 </style>

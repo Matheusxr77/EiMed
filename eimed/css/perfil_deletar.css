@@ -4,15 +4,13 @@
     box-sizing: border-box;
 }
 
-/**boot**/
+/* boot*/
 a{
 	text-decoration: none;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-
-
 
 .texto-topo h1{
 	text-align: center;
@@ -139,7 +137,6 @@ td{
 	width: 100%; 
 	word-break: break-word;
 	overflow-y: scroll;
-
 }
 
 .gambiarra-guilherme-btn{

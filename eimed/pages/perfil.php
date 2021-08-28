@@ -36,6 +36,6 @@ $sql = $sql->rowCount();
     </section>    
     
 </body>
-<script src="..\scripts\jquery.js" type="text/javascript" charset="utf-8"></script>
-<script src="..\scripts\perfil_btn.js" type="text/javascript" charset="utf-8"></script>
+<script src=".\scripts\jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src=".\scripts\perfil_btn.js" type="text/javascript" charset="utf-8"></script>
 </html>

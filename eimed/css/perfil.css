@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/**boot**/
+/* boot */
 a{
     text-decoration: none;
 }
@@ -15,7 +15,7 @@ body{
 .clear{
     clear: both;
 }
-/**styles**/
+/* styles */
 
 .descricao{
     box-shadow: 2px 2px 2px 2px darkgray;
@@ -60,6 +60,5 @@ body{
 	font-family: Monaco, monospace;
 	font-weight: bold;
     font-size: 16px;
-    right: 0;
-    
+    right: 0;   
 }

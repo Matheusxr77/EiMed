@@ -31,21 +31,22 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `user`(
-	`id` int(11) auto_increment,
+	`id` int auto_increment,
 	`username` varchar(255) not null,
-    `email` varchar(255) not null unique,
-    `category` int(1) not null,
+    `email` varchar(255) not null,
+    `category` varchar(10) not null,
     `password` varchar(32) not null,
     primary key (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 --
 -- Inserindo Dados na Tabela `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `email`, `category`, `password`) VALUES
-(1, 'Matheus', 'matheus@gmail.com', '1', MDS('123'));
-(2, 'Admin', 'admin@gmail.com', '1', MDS('admin'));
+(1, 'Matheus', 'matheus@gmail.com', '1', MD5('123')),
+(2, 'Admin', 'admin@gmail.com', '1', MD5('admin'));
 
 -----------------------------------------------------------
 
@@ -54,7 +55,7 @@ INSERT INTO `user` (`id`, `username`, `email`, `category`, `password`) VALUES
 --
 
 CREATE TABLE `specialty`(
-	`id` int(11) auto_increment,
+	`id` int auto_increment,
     `specialty_name` varchar(255) not null unique, 
     primary key (`id`)
 );
@@ -64,9 +65,9 @@ CREATE TABLE `specialty`(
 --
 
 INSERT INTO `specialty` (`id`, `specialty_name`) VALUES
-(1, 'Cardiologia');
-(2, 'Psiquiatria');
-(3, 'Pediatria');
+(1, 'Cardiologia'),
+(2, 'Psiquiatria'),
+(3, 'Pediatria'),
 (4, 'Neurologia');
 
 -----------------------------------------------------------
@@ -76,7 +77,7 @@ INSERT INTO `specialty` (`id`, `specialty_name`) VALUES
 --
 
 CREATE TABLE `news`(
-	`id` int(11) auto_increment,
+	`id` int auto_increment,
     `news_name` varchar(255) not null unique,
     `publication_date` date not null,
 	`author` varchar(255) not null,
@@ -92,7 +93,7 @@ CREATE TABLE `news`(
 --
 
 INSERT INTO `news` (`id`, `news_name`, `publication_date`, `author`, `place_occurrence`, `news_image`, `content`, `source`) VALUES
-(1, 'Cardiologia em evolução', '12/10/2020', 'Julião', 'Brasília', '5fdc095c1ec11.jpg', 'um, dois, três indiozinhos', 'vozes da minha cabeça');
+(1, 'Cardiologia em evolução', '20/10/12', 'Julião', 'Brasília', '5fdc095c1ec11.jpg', 'um, dois, três indiozinhos', 'vozes da minha cabeça');
 
 -----------------------------------------------------------
 
@@ -123,8 +124,8 @@ INSERT INTO `doctor` (`cpf`, `doctor_name`, `specialty`, `doctor_description`, `
 --
 
 CREATE TABLE `specialty_doctor`(
-	`id` int(11) auto_increment,
-    `FK_id_specialty` int(11),
+	`id` int auto_increment,
+    `FK_id_specialty` int,
     `FK_cpf_doctor` char(11),
     primary key (`id`),
     foreign key (`FK_id_specialty`) references `specialty`(`id`),
@@ -138,10 +139,10 @@ CREATE TABLE `specialty_doctor`(
 --
 
 CREATE TABLE `hospital`(
-	`hospital_cnpj` char(14) not null unique,
+	`hospital_cnpj` char(14) not null,
     `hospital_name` varchar(255) not null,
     `hospital_address_street` varchar(255) not null,
-    `hospital_address_number` int(3),
+    `hospital_address_number` int,
     `hospital_address_complementary` varchar(255),
     `hospital_address_district` varchar(255) not null,
     `hospital_address_city` varchar(255) not null,
@@ -150,7 +151,6 @@ CREATE TABLE `hospital`(
     `hospital_office_hours` varchar(255) not null,
     primary key (`hospital_cnpj`)
 );
-
 --
 -- Inserindo Dados na Tabela `hospital`
 --
@@ -168,7 +168,7 @@ CREATE TABLE `clinic`(
 	`clinic_cnpj` char(14) not null unique,
     `clinic_name` varchar(255) not null,
     `clinic_address_street` varchar(255) not null,
-    `clinic_address_number` int(3),
+    `clinic_address_number` int,
     `clinic_address_complementary` varchar(255),
     `clinic_address_district` varchar(255) not null,
     `clinic_address_city` varchar(255) not null,
@@ -192,7 +192,7 @@ INSERT INTO `clinic` (`clinic_cnpj`, `clinic_name`, `clinic_address_street`, `cl
 --
 
 CREATE TABLE `doctor_works_hospital`(
-	`id` int(11) auto_increment,
+	`id` int auto_increment,
     `FK_cpf_doctor` char(11),
     `fk_hospital_cnpj` char(14),
     primary key (`id`),
@@ -207,8 +207,8 @@ CREATE TABLE `doctor_works_hospital`(
 --
 
 CREATE TABLE `doctor_works_clinic`(
-	`id` int(11) auto_increment,
-    `FK_cpf_doctor` char(11),
+	`id` int auto_increment,
+    `FK_cpf_doctor` char,
     `fk_clinic_cnpj` char(14),
     primary key (`id`),
     foreign key (`FK_cpf_doctor`) references `doctor`(`cpf`),
@@ -222,7 +222,7 @@ CREATE TABLE `doctor_works_clinic`(
 --
 
 CREATE TABLE `treatment`(
-	`id` int(11) auto_increment,
+	`id` int auto_increment,
     `treatment_name` varchar(255) not null unique,
     `abstract` text not null,
     `treatment_image` varchar(255) not null,
@@ -244,8 +244,8 @@ INSERT INTO `treatment` (`id`, `treatment_name`, `abstract`, `treatment_image`, 
 --
 
 CREATE TABLE `local_treatment_clinic`(
-	`id` int(11) auto_increment,
-    `FK_id_treatment` int(11),
+	`id` int auto_increment,
+    `FK_id_treatment` int,
     `FK_clinic_cnpj` char(14),
     primary key (`id`),
     foreign key (`FK_id_treatment`) references `treatment`(`id`),
@@ -259,8 +259,8 @@ CREATE TABLE `local_treatment_clinic`(
 --
 
 CREATE TABLE `local_treatment_hospital`(
-	`id` int(11) auto_increment,
-    `FK_id_treatment` int(11),
+	`id` int auto_increment,
+    `FK_id_treatment` int,
     `FK_hospital_cnpj` char(14),
     primary key (`id`),
     foreign key (`FK_id_treatment`) references `treatment`(`id`),
@@ -274,7 +274,7 @@ CREATE TABLE `local_treatment_hospital`(
 --
 
 CREATE TABLE `accident`(
-	`id` int(11) auto_increment,
+	`id` int auto_increment,
     `accident_name` varchar(255) not null unique,
     `first_aid` text not null,
     `accident_image` varchar(255) not null,
@@ -295,7 +295,7 @@ INSERT INTO `accident` (`id`, `accident_name`, `first_aid`, `accident_image`) VA
 --
 
 CREATE TABLE `illness`(
-	`id` int(11) auto_increment,
+	`id` int auto_increment,
     `illness_name` varchar(255) not null unique,
     `illness_resume` text not null,
     `symptoms` text not null,
@@ -319,9 +319,9 @@ INSERT INTO `illness` (`id`, `illness_name`, `illness_resume`, `symptoms`, `caus
 --
 
 CREATE TABLE `treatment_accident`(
-	`id` int(11) auto_increment,
-    `FK_id_treatment` int(11),
-    `FK_id_accident` int(11),
+	`id` int auto_increment,
+    `FK_id_treatment` int,
+    `FK_id_accident` int,
     primary key (`id`),
     foreign key (`FK_id_treatment`) references `treatment`(`id`),
     foreign key (`FK_id_accident`) references `accident`(`id`)
@@ -334,9 +334,9 @@ CREATE TABLE `treatment_accident`(
 --
 
 CREATE TABLE `treatment_illness`(
-	`id` int(11) auto_increment,
-    `FK_id_treatment` int(11),
-    `FK_id_illness` int(11),
+	`id` int auto_increment,
+    `FK_id_treatment` int,
+    `FK_id_illness` int,
     primary key (`id`),
     foreign key (`FK_id_treatment`) references `treatment`(`id`),
     foreign key (`FK_id_illness`) references `illness`(`id`)

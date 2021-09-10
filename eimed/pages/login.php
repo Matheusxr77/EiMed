@@ -14,6 +14,18 @@
 <body>
     <!-- container -->
     <div class="container">
+        <?php
+        if (isset($_POST['acao'])) {
+            Login::logar($_POST['email'], $_POST['password']);
+        }
+        if (isset($_POST['acao-register'])) {
+            $username = $_POST['username-register'];
+            $email = $_POST['email-register'];
+            $password = $_POST['password-register'];
+
+            Cadastrar::cadastro($username, $email, $password);
+        }
+        ?>
         <!-- first content -->
         <div class="content first-content">
             <div class="first-column">
@@ -45,32 +57,23 @@
                     </ul>
                 </div>
                 <p class="description description-second"> ou use seu e-mail para registro: </p>
-                <?php
-                    if (isset($_POST['acao-cadastro'])) {
-                        $user = $_POST['user-cadastro'];
-                        $email = $_POST['email-cadastro'];
-                        $password = $_POST['password-cadastro'];
-
-                        Cadastrar::cadastro($user, $email, $password);
-                    }                   
-                ?>
                 <!-- second column -->
-                <form class="form" method="POST">
+                <form class="form" method="POST" accept-charset="utf-8">
                     <label class="label-input" for="">
                         <i class="far fa-user icon-modify"></i>
-                        <input type="text" placeholder="Nome" name="user-cadastro" >
+                        <input type="text" placeholder="Nome" name="username-register" required>
                     </label>
                     
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="E-mail" name="email-cadastro">
+                        <input type="email" placeholder="E-mail" name="email-register" required>
                     </label>
                     
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha" name="password-cadastro">
+                        <input type="password" placeholder="Senha" name="password-register" required>
                     </label>
-                    <input class="btn btn-second" type="submit" name="acao-cadastro" value="Cadastre-se">      
+                    <input class="btn btn-second" type="submit" name="acao-register" value="ENVIAR">      
                 </form>
             </div>
         </div>
@@ -106,23 +109,18 @@
                     </ul>
                 </div>
                 <p class="description description-second"> ou use sua conta de e-mail: </p>
-                <?php 
-                    if (isset($_POST['acao'])) {
-                        Login::logar($_POST['email'], $_POST['password']);
-                    }
-                ?>
-                <form class="form" method="POST">
+                <form class="form" method="POST" accept-charset="utf-8">
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="E-mail" name="email">
+                        <input type="email" placeholder="E-mail" name="email" required>
                     </label>
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" name="password" placeholder="Senha">
+                        <input type="password" placeholder="Senha" name="password" required>
                     </label>
                     <a class="password" href="#"> Esqueceu sua senha? </a>
-                    <input class="btn btn-second" type="submit" name="acao" value="Entrar">
+                    <input class="btn btn-second" type="submit" name="acao" value="ENVIAR">
                 </form>
             </div>
         </div>

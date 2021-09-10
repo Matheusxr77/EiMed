@@ -9,6 +9,6 @@
 	define('INCLUDE_PATH', 'http://localhost/EiMed/eimed/');
 	define('HOST', 'localhost');
 	define('DATABASE', 'eimed');
-	define('USER', 'root');
-	define('PASSWORD', '');
+	define('USER', 'adabduser');
+	define('PASSWORD', 'hightechsinuca1337');
  ?>

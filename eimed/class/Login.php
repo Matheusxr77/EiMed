@@ -4,13 +4,13 @@
 			return isset($_SESSION['login']) ? true : false;
 		}
 
-		public static function logar($user, $password){
-			$sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios` WHERE Email = ? AND Senha = ?");
-			$sql->execute(array($user, $password));
+		public static function logar($email, $password){
+			$sql = MySql::conectar()->prepare("SELECT * FROM `user` WHERE email = ? AND password = ?");
+			$sql->execute(array($email, $password));
 			if($sql->rowCount() == 1){
 				//Logado com sucesso!
 				$_SESSION['login'] = true;
-				$_SESSION['user'] = $user;
+				$_SESSION['email'] = $email;
 				$_SESSION['password'] = $password;
 				header("Location: ".INCLUDE_PATH);
 				die();

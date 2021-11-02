@@ -1,0 +1,60 @@
+/* banner */
+.banner h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 12%;
+}
+
+/* about */
+.about {
+    background-image: url("../images/background-noticias.png");
+}
+
+.about .banner h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 12%;
+}
+
+.about .banner p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+}
+
+/* buttons */
+.buttons {
+    font-weight: bold;
+}
+
+/* news */
+.news {
+    background-image: url("../images/texture-light.png");
+    padding-top: 10%;
+}
+
+.news h2 {
+    color: #212121;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 3.5px;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.news h2::after {
+    color: #212121;
+    content: '';
+    display: block;
+    width: 100px;
+    border-top: 2px solid #2dc7d0;
+    margin: 15px auto;
+}
+
+.news p {
+    color: #212121;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}

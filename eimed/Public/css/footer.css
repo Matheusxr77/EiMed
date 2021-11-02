@@ -1,0 +1,15 @@
+/* footer */
+footer {
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+footer p {
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+footer i {
+   margin-right: 10px !important;
+}

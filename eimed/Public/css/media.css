@@ -1,0 +1,33 @@
+/* media */
+/* smartphone */
+@media only screen and (max-width: 480px){
+    .banner {
+        padding-top: 2.5rem;
+    }
+    .banner h2 {
+        font-size: 1.3rem;
+    }
+    .card-image-horizontal {
+        display: none;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 601px){
+    .banner {
+        padding-top: 2.5rem;
+    }
+    .banner h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* computer */
+@media only screen and (max-width: 993px){
+    .banner {
+        padding-top: 2.5rem;
+    }
+    .banner h2{
+        font-size: 3rem;
+    }
+}

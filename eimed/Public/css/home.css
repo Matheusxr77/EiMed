@@ -1,0 +1,174 @@
+/* banner */
+.banner h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 12%;
+}
+
+/* buttons */
+.buttons {
+    font-weight: bold;
+}
+
+/* home */
+.home {
+    animation: change-background 20s infinite;
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .banner p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.home .banner {
+    text-transform: uppercase;
+}
+
+/* about */
+.about {
+    background-image: url("../images/texture-light.png");
+    padding-top: 0.25%;
+}
+
+.about .banner {
+    margin-top: -20px;
+}
+
+.about h2 {
+    color: #212121;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 3.5px;
+    text-align: center;
+}
+
+.about h2::after {
+    color: #212121;
+    content: '';
+    display: block;
+    width: 100px;
+    border-top: 2px solid #2dc7d0;
+    margin: 15px auto;
+}
+
+.about p {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* mission */
+.about .mission {
+    padding: 20px 0;
+    margin-bottom: 0%;
+}
+
+.about .mission .icon {
+    color: #fff;
+}
+
+.about .mission h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.about .mission p {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* services */
+.services {
+    background-image: url("../images/texture-light.png");
+}
+
+.services h2 {
+    font-weight: bold;
+}
+
+.services h2::after {
+    content: '';
+    color: #212121;
+    display: block;
+    width: 100px;
+    border-top: 2px solid #2dc7d0;
+    margin: 15px auto;
+}
+
+.services h3 {
+    color: #212121;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 3.5px;
+    text-align: center;
+}
+
+.services p {
+    color: #212121;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    text-align: justify;
+}
+
+/* assessments */
+.assessments h2 {
+    font-weight: bold;
+}
+
+.assessments h2::after {
+    content: '';
+    color: #212121;
+    display: block;
+    width: 100px;
+    border-top: 2px solid yellow;
+    margin: 15px auto;
+}
+
+.assessments .stars .icon {
+    color: yellow;
+}
+
+/* contact */
+.contact {
+    background-image: url("../images/texture-light.png");
+    margin-top: 0%;
+}
+
+.contact h2 {
+    color: #212121;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact h2::after {
+    content: '';
+    color: #212121;
+    display: block;
+    width: 100px;
+    border-top: 2px solid #2dc7d0;
+    margin: 15px auto;
+}
+
+.contact form {
+    width: 550px;
+    align-items: center;
+}
+
+/* home animation */
+@keyframes change-background {
+    33% {
+        background-image: url('../images/background-2.png');
+    }
+    66% {
+        background-image: url('../images/background-3.png');
+    }
+    100% {
+        background-image: url('../images/background.png');
+    }
+}

@@ -3,8 +3,8 @@ session_start();
 
 //connection
 $servername = 'localhost';
-$username = 'adabduser';
-$password = 'hightechsinuca1337';
+$username = 'root';
+$password = 'root';
 $db_name = 'eimed';
 
 //connection global variable

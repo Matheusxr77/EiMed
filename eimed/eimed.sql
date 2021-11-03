@@ -95,7 +95,7 @@ CREATE TABLE `depositions` (
 INSERT INTO `depositions` (`id`, `depositionsName`, `depositionsEmail`, `depositionsSubject`, `depositionsMessage`) VALUES
 (1, 'João', 'joao@gmail.com', 'Elogiar', 'muito bom'),
 (2, 'Matheus', 'suehtamxr77@gmail.com', 'Elogio', 'parabéns'),
-(3, 'José', 'jose@gmail.com', 'Elogio', 'boa'),
+(3, 'José', 'jose@gmail.com', 'Elogio', 'boa');
 
 -- --------------------------------------------------------
 
